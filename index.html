@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Dimas Dwifigo Cahyo | Links</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2092/2092663.png" type="image/png">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="icon"
+        href="https://cdn-icons-png.flaticon.com/512/2092/2092663.png"
+        type="image/png">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap"
+        rel="stylesheet">
 
     <style>
         :root {
@@ -15,7 +23,7 @@
             --text-color: #ffffff;
             --card-bg: #1f1f1f;
             --hover-bg: #2d2d2d;
-            --accent-color: #00d2ff; /* Warna biru cyber security */
+            --accent-color: #00d2ff;
         }
 
         * {
@@ -32,7 +40,10 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-image: radial-gradient(circle at 50% 0%, #1a1a2e 0%, #0a0a0a 70%);
+            background-image:
+                radial-gradient(circle at 50% 0%,
+                    #1a1a2e 0%,
+                    #0a0a0a 70%);
         }
 
         .container {
@@ -42,7 +53,7 @@
             text-align: center;
         }
 
-        /* Profile Section */
+        /* Profile */
         .profile-img {
             width: 100px;
             height: 100px;
@@ -60,6 +71,12 @@
             letter-spacing: 0.5px;
         }
 
+        .verified-badge {
+            color: var(--accent-color);
+            font-size: 0.9rem;
+            margin-left: 5px;
+        }
+
         .title {
             font-size: 0.9rem;
             color: #888;
@@ -67,13 +84,7 @@
             font-weight: 300;
         }
 
-        .verified-badge {
-            color: var(--accent-color);
-            font-size: 0.9rem;
-            margin-left: 5px;
-        }
-
-        /* Links Section */
+        /* Links */
         .links {
             display: flex;
             flex-direction: column;
@@ -88,7 +99,7 @@
             border-radius: 12px;
             display: flex;
             align-items: center;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition: all 0.35s ease;
             border: 1px solid #333;
             position: relative;
             overflow: hidden;
@@ -98,7 +109,11 @@
             transform: translateY(-3px);
             background-color: var(--hover-bg);
             border-color: var(--accent-color);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.25);
+        }
+
+        .link-card:active {
+            transform: scale(0.97);
         }
 
         .link-icon {
@@ -109,9 +124,9 @@
         }
 
         .link-text {
-            font-weight: 500;
             flex-grow: 1;
             text-align: left;
+            font-weight: 500;
         }
 
         .link-arrow {
@@ -125,13 +140,32 @@
             transform: translateX(3px);
         }
 
-        /* Specific Colors on Hover (Optional: Hapus jika ingin satu warna saja) */
-        .link-card:hover .fa-discord { color: #5865F2; }
-        .link-card:hover .fa-instagram { color: #E1306C; }
-        .link-card:hover .fa-github { color: #fff; }
-        .link-card:hover .fa-linkedin { color: #0077b5; }
-        .link-card:hover .fa-medium { color: #fff; }
-        .link-card:hover .fa-spotify { color: #1DB954; }
+        /* Hover Colors */
+        .link-card:hover .fa-instagram {
+            color: #E1306C;
+        }
+
+        .link-card:hover .fa-discord {
+            color: #5865F2;
+        }
+
+        .link-card:hover .fa-linkedin {
+            color: #0077b5;
+        }
+
+        .link-card:hover .fa-spotify {
+            color: #1DB954;
+        }
+
+        /* TikTok Clean */
+        .fa-tiktok {
+            color: #ffffff;
+            transition: 0.35s ease;
+        }
+
+        .link-card:hover .fa-tiktok {
+            color: #ffffff;
+        }
 
         /* Footer */
         .footer {
@@ -139,55 +173,112 @@
             font-size: 0.8rem;
             color: #555;
         }
-        
+
         /* Animation */
         .fade-in {
             animation: fadeIn 0.8s ease-in-out;
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
+
 <body>
 
     <div class="container fade-in">
-        <img src="pp.jpeg" alt="Profile Picture" class="profile-img">
-        
-        <h1 class="name">Dimas Dwifigo Cahyo <i class="fas fa-check-circle verified-badge" title="Verified"></i></h1>
-        <p class="title">My Social Media</p>
+
+        <img src="pp.jpeg"
+            alt="Profile Picture"
+            class="profile-img">
+
+        <h1 class="name">
+            Dimas Dwifigo Cahyo
+            <i class="fas fa-check-circle verified-badge"></i>
+        </h1>
+
+        <p class="title">
+            My Social Media
+        </p>
 
         <div class="links">
-            
-            <a href="https://github.com/DimasFigo" target="_blank" class="link-card">
-                <i class="fab fa-github link-icon"></i>
-                <span class="link-text">GitHub</span>
-                <i class="fas fa-chevron-right link-arrow"></i>
-            </a>
 
-            <a href="https://www.linkedin.com/in/dimas-dwifigo-cahyo-157552330/" target="_blank" class="link-card">
-                <i class="fab fa-linkedin link-icon"></i>
-                <span class="link-text">LinkedIn</span>
-                <i class="fas fa-chevron-right link-arrow"></i>
-            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/figocahyo_/"
+                target="_blank"
+                class="link-card">
 
-            <a href="https://open.spotify.com/user/31l7peztrocfsf2tpyftmhcprsiq?si=9ef34d6d553b4d98" target="_blank" class="link-card">
-                <i class="fab fa-spotify link-icon"></i>
-                <span class="link-text">Spotify</span>
-                <i class="fas fa-chevron-right link-arrow"></i>
-            </a>
-
-            <a href="https://discord.com/invite/jx3cXDT4Pm" target="_blank" class="link-card">
-                <i class="fab fa-discord link-icon"></i>
-                <span class="link-text">Discord Community</span>
-                <i class="fas fa-chevron-right link-arrow"></i>
-            </a>
-
-            <a href="https://www.instagram.com/figocahyo_/" target="_blank" class="link-card">
                 <i class="fab fa-instagram link-icon"></i>
-                <span class="link-text">Instagram</span>
+
+                <span class="link-text">
+                    Instagram
+                </span>
+
+                <i class="fas fa-chevron-right link-arrow"></i>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@bondwithu"
+                target="_blank"
+                class="link-card">
+
+                <i class="fab fa-tiktok link-icon"></i>
+
+                <span class="link-text">
+                    TikTok
+                </span>
+
+                <i class="fas fa-chevron-right link-arrow"></i>
+            </a>
+
+            <!-- Discord -->
+            <a href="https://discord.com/invite/jx3cXDT4Pm"
+                target="_blank"
+                class="link-card">
+
+                <i class="fab fa-discord link-icon"></i>
+
+                <span class="link-text">
+                    Discord Community
+                </span>
+
+                <i class="fas fa-chevron-right link-arrow"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/dimas-dwifigo-cahyo-157552330/"
+                target="_blank"
+                class="link-card">
+
+                <i class="fab fa-linkedin link-icon"></i>
+
+                <span class="link-text">
+                    LinkedIn
+                </span>
+
+                <i class="fas fa-chevron-right link-arrow"></i>
+            </a>
+
+            <!-- Spotify -->
+            <a href="https://open.spotify.com/user/31l7peztrocfsf2tpyftmhcprsiq?si=9ef34d6d553b4d98"
+                target="_blank"
+                class="link-card">
+
+                <i class="fab fa-spotify link-icon"></i>
+
+                <span class="link-text">
+                    Spotify
+                </span>
+
                 <i class="fas fa-chevron-right link-arrow"></i>
             </a>
 
@@ -196,7 +287,9 @@
         <div class="footer">
             &copy; 2025 Dimas Dwifigo Cahyo. All Rights Reserved.
         </div>
+
     </div>
 
 </body>
+
 </html>
